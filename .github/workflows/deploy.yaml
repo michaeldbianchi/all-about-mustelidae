@@ -1,0 +1,30 @@
+name: deploy jets
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  AWS_ACCESS_KEY_ID: AKIAVX533QDQMZIW57NQ
+  AWS_REGION: us-east-1
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: test
+        run: ./bin/test
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [test]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: deploy
+        env:
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: ./bin/deploy
