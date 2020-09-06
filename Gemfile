@@ -2,10 +2,13 @@ source "https://rubygems.org"
 
 gem "jets"
 
-# Include jetpacker if you are building html pages
-# gem "jetpacker"
+gem "faraday"
+gem "faraday_middleware"
+gem 'pragmatic_segmenter'
 
-# gem "dynomite"
+group :development do
+  gem "pry"
+end
 
 # development and test groups are not bundled as part of the deployment
 group :development, :test do

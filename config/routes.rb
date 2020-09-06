@@ -1,5 +1,6 @@
 Jets.application.routes.draw do
   get  "facts", to: "facts#index"
+  get "facts/:topic", to: "facts#show"
   get "opl/health", to: "health_check#health"
 
   # The jets/public#show controller can serve static utf8 content out of the public folder.
