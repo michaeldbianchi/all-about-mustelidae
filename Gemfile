@@ -3,9 +3,9 @@ source "https://rubygems.org"
 gem "jets"
 
 # Include jetpacker if you are building html pages
-gem "jetpacker"
+# gem "jetpacker"
 
-gem "dynomite"
+# gem "dynomite"
 
 # development and test groups are not bundled as part of the deployment
 group :development, :test do

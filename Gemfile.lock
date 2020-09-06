@@ -107,10 +107,6 @@ GEM
     crass (1.0.6)
     diff-lcs (1.4.4)
     dotenv (2.7.6)
-    dynomite (1.2.6)
-      activesupport
-      aws-sdk-dynamodb
-      rainbow
     erubi (1.9.0)
     gems (1.2.0)
     globalid (0.4.2)
@@ -118,10 +114,6 @@ GEM
     hashie (4.1.0)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
-    jetpacker (0.4.2)
-      activesupport (>= 4.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 4.2)
     jets (2.3.17)
       actionmailer (~> 6.0.0)
       actionpack (~> 6.0.0)
@@ -184,8 +176,6 @@ GEM
     puma (4.3.5)
       nio4r (~> 2.0)
     rack (2.2.3)
-    rack-proxy (0.6.5)
-      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails-dom-testing (2.0.3)
@@ -234,8 +224,6 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capybara
-  dynomite
-  jetpacker
   jets
   launchy
   puma
